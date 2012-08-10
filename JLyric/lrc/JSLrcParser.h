@@ -20,7 +20,6 @@
 @interface JSLrc : NSObject
 
 @property (readonly, nonatomic) NSMutableDictionary *lyric; // time:value
-@property (readonly, nonatomic) NSArray *lyricKey; // time
 @property (readonly, nonatomic) NSMutableArray *tags;
 @property (strong, nonatomic) NSString *offset;
 

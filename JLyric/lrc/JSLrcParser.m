@@ -26,7 +26,7 @@
     NSLog(@"lrc string : \n%@", lString);
 #endif
     while (lString && lString.length > 0) {
-        //获取歌曲名信息
+        // get lrc info
         if ([lString hasPrefix:@"[ti:"]
             || [lString hasPrefix:@"[ar:"]
             || [lString hasPrefix:@"[al:"]
@@ -95,14 +95,10 @@
 
 //##################################### JSLrc ##################################
 @implementation JSLrc
-@synthesize lyric = _lyric, lyricKey = _lyricKey, tags = _tags, offset = _offset;
+@synthesize lyric = _lyric, tags = _tags, offset = _offset;
 
 + (__autoreleasing JSLrc *)lrc {
     return [[JSLrc alloc] init];
-}
-
-- (__autoreleasing NSArray *)lyricKey {
-    return [self.lyric allKeys];
 }
 
 - (__autoreleasing NSMutableArray *)tags {

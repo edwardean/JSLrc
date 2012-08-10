@@ -65,7 +65,7 @@
     [[HHAudioManager shared].observer removeObject:self];
 }
 
-#pragma mark - 
+#pragma mark -
 - (void)refreshView {
     id key = [_lrcKeys objectAtIndex:index];
     CGPoint point = self.backScrollView.contentOffset;
@@ -75,19 +75,25 @@
                     lineBreakMode:self.lrcLabel.lineBreakMode];
     self.selectedLabel.text = nil;
     __block int i = index;
-    [UIView animateWithDuration:0.25
-                     animations:^{
-        self.backScrollView.contentOffset = (CGPoint){0, point.y+size.height};
-    } completion:^(BOOL finished) {
-        CGRect r = self.selectedLabel.frame;
-        self.selectedLabel.frame = (CGRect){{0, i*self.selectedLabel.font.lineHeight}, r.size};
-        self.selectedLabel.text = s;
-    }];
-    index ++;
+    double duration = 0.0;
+    if (index < [_lrcKeys count]-1) {
+        duration = [[_lrcKeys objectAtIndex:++index] doubleValue] - [key doubleValue];
+    }
+    [self.backScrollView setContentOffset:(CGPoint){0, point.y+size.height} animated:YES];
+    self.selectedLabel.text = s;
+    __block CGRect r = self.selectedLabel.frame;
+    self.selectedLabel.frame = (CGRect){{(320-size.width)/2, i*self.selectedLabel.font.lineHeight}, {0, r.size.height}};
+    if (duration > 0.00001) {
+        [UIView animateWithDuration:duration
+                         animations:^{
+                             self.selectedLabel.frame = (CGRect){{(320-size.width)/2, i*self.selectedLabel.font.lineHeight}, {size.width, r.size.height}};
+                         }];
+    } else {
+        self.selectedLabel.frame = (CGRect){{(320-size.width)/2, i*self.selectedLabel.font.lineHeight}, {size.width, r.size.height}};
+    }
 }
 
 - (void)playbackQueue:(NSString *)fileName totalTimeInterval:(NSTimeInterval)total currentTimeInterval:(NSTimeInterval)timeInterval {
-    HHDINFO(@"%lf, %lf", timeInterval, total);
     if (_lrcKeys && [_lrcKeys count] > index) {
         if ([[_lrcKeys objectAtIndex:index] doubleValue] <= timeInterval) {
             [self refreshView];
@@ -104,7 +110,7 @@
         _lrcKeys = [NSMutableArray array];
     }
     if ([_lrcKeys count]<1) {
-        NSArray __autoreleasing *ks = [_lrc.lyricKey sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        NSArray __autoreleasing *ks = [[_lrc.lyric allKeys] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
             return [obj1 floatValue]>[obj2 floatValue];
         }];
         if (ks) [_lrcKeys addObjectsFromArray:ks];
