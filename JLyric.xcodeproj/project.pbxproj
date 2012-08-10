@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E92FE2C015D299F900354E14 /* AQPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = E92FE2AC15D299F900354E14 /* AQPlayer.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E92FE2C415D299F900354E14 /* HHAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E92FE2B515D299F900354E14 /* HHAudioManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E92FE2C515D299F900354E14 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E92FE2B715D299F900354E14 /* CADebugMacros.cpp */; };
+		E92FE2C615D299F900354E14 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E92FE2BA15D299F900354E14 /* CAStreamBasicDescription.cpp */; };
+		E92FE2C715D299F900354E14 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E92FE2BC15D299F900354E14 /* CAXException.cpp */; };
+		E92FE2C815D299F900354E14 /* MeterTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E92FE2BE15D299F900354E14 /* MeterTable.cpp */; };
+		E92FE2CE15D29B4800354E14 /* HHDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = E92FE2CC15D29B4800354E14 /* HHDebug.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E92FE2DC15D29E9200354E14 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92FE2DB15D29E9200354E14 /* CoreAudio.framework */; };
+		E92FE2E015D29EE200354E14 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92FE2DF15D29EE200354E14 /* AudioToolbox.framework */; };
+		E92FE2E815D2ADC500354E14 /* JSLrcParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E92FE2E715D2ADC500354E14 /* JSLrcParser.m */; };
+		E99E466A15D1792500017105 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99E466915D1792500017105 /* UIKit.framework */; };
+		E99E466C15D1792500017105 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99E466B15D1792500017105 /* Foundation.framework */; };
+		E99E466E15D1792500017105 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99E466D15D1792500017105 /* CoreGraphics.framework */; };
+		E99E467415D1792500017105 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E99E467215D1792500017105 /* InfoPlist.strings */; };
+		E99E467615D1792500017105 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E467515D1792500017105 /* main.m */; };
+		E99E467A15D1792500017105 /* JSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E467915D1792500017105 /* JSAppDelegate.m */; };
+		E99E467D15D1792500017105 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99E467B15D1792500017105 /* MainStoryboard.storyboard */; };
+		E99E468015D1792500017105 /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E467F15D1792500017105 /* JSViewController.m */; };
+		E99E468915D17B1500017105 /* 01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E99E468815D17B1500017105 /* 01.mp3 */; };
+		E9E4401E15D395C7000D6483 /* 01.lrc in Resources */ = {isa = PBXBuildFile; fileRef = E9E4401D15D395C6000D6483 /* 01.lrc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E92FE2AB15D299F900354E14 /* AQPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQPlayer.h; sourceTree = "<group>"; };
+		E92FE2AC15D299F900354E14 /* AQPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AQPlayer.mm; sourceTree = "<group>"; };
+		E92FE2B415D299F900354E14 /* HHAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAudioManager.h; sourceTree = "<group>"; };
+		E92FE2B515D299F900354E14 /* HHAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAudioManager.m; sourceTree = "<group>"; };
+		E92FE2B715D299F900354E14 /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		E92FE2B815D299F900354E14 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		E92FE2B915D299F900354E14 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		E92FE2BA15D299F900354E14 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		E92FE2BB15D299F900354E14 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		E92FE2BC15D299F900354E14 /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
+		E92FE2BD15D299F900354E14 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		E92FE2BE15D299F900354E14 /* MeterTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MeterTable.cpp; sourceTree = "<group>"; };
+		E92FE2BF15D299F900354E14 /* MeterTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeterTable.h; sourceTree = "<group>"; };
+		E92FE2CB15D29B4800354E14 /* HHDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHDebug.h; sourceTree = "<group>"; };
+		E92FE2CC15D29B4800354E14 /* HHDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHDebug.m; sourceTree = "<group>"; };
+		E92FE2CD15D29B4800354E14 /* HHGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHGlobal.h; sourceTree = "<group>"; };
+		E92FE2DB15D29E9200354E14 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		E92FE2DF15D29EE200354E14 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E92FE2E615D2ADC500354E14 /* JSLrcParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLrcParser.h; sourceTree = "<group>"; };
+		E92FE2E715D2ADC500354E14 /* JSLrcParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLrcParser.m; sourceTree = "<group>"; };
+		E99E466515D1792500017105 /* JLyric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLyric.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99E466915D1792500017105 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E99E466B15D1792500017105 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E99E466D15D1792500017105 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E99E467115D1792500017105 /* JLyric-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JLyric-Info.plist"; sourceTree = "<group>"; };
+		E99E467315D1792500017105 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E99E467515D1792500017105 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E99E467715D1792500017105 /* JLyric-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JLyric-Prefix.pch"; sourceTree = "<group>"; };
+		E99E467815D1792500017105 /* JSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSAppDelegate.h; sourceTree = "<group>"; };
+		E99E467915D1792500017105 /* JSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSAppDelegate.m; sourceTree = "<group>"; };
+		E99E467C15D1792500017105 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E99E467E15D1792500017105 /* JSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
+		E99E467F15D1792500017105 /* JSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
+		E99E468815D17B1500017105 /* 01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01.mp3; sourceTree = "<group>"; };
+		E9E4401D15D395C6000D6483 /* 01.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 01.lrc; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E99E466215D1792500017105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E92FE2E015D29EE200354E14 /* AudioToolbox.framework in Frameworks */,
+				E92FE2DC15D29E9200354E14 /* CoreAudio.framework in Frameworks */,
+				E99E466A15D1792500017105 /* UIKit.framework in Frameworks */,
+				E99E466C15D1792500017105 /* Foundation.framework in Frameworks */,
+				E99E466E15D1792500017105 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E92FE2AA15D299F900354E14 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				E92FE2AB15D299F900354E14 /* AQPlayer.h */,
+				E92FE2AC15D299F900354E14 /* AQPlayer.mm */,
+				E92FE2B415D299F900354E14 /* HHAudioManager.h */,
+				E92FE2B515D299F900354E14 /* HHAudioManager.m */,
+				E92FE2B615D299F900354E14 /* iPublicUtility */,
+				E92FE2BE15D299F900354E14 /* MeterTable.cpp */,
+				E92FE2BF15D299F900354E14 /* MeterTable.h */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		E92FE2B615D299F900354E14 /* iPublicUtility */ = {
+			isa = PBXGroup;
+			children = (
+				E92FE2B715D299F900354E14 /* CADebugMacros.cpp */,
+				E92FE2B815D299F900354E14 /* CADebugMacros.h */,
+				E92FE2B915D299F900354E14 /* CAMath.h */,
+				E92FE2BA15D299F900354E14 /* CAStreamBasicDescription.cpp */,
+				E92FE2BB15D299F900354E14 /* CAStreamBasicDescription.h */,
+				E92FE2BC15D299F900354E14 /* CAXException.cpp */,
+				E92FE2BD15D299F900354E14 /* CAXException.h */,
+			);
+			path = iPublicUtility;
+			sourceTree = "<group>";
+		};
+		E92FE2CA15D29B4800354E14 /* HHCommonLib */ = {
+			isa = PBXGroup;
+			children = (
+				E92FE2CB15D29B4800354E14 /* HHDebug.h */,
+				E92FE2CC15D29B4800354E14 /* HHDebug.m */,
+				E92FE2CD15D29B4800354E14 /* HHGlobal.h */,
+			);
+			path = HHCommonLib;
+			sourceTree = "<group>";
+		};
+		E92FE2E315D2AD8800354E14 /* lrc */ = {
+			isa = PBXGroup;
+			children = (
+				E92FE2E615D2ADC500354E14 /* JSLrcParser.h */,
+				E92FE2E715D2ADC500354E14 /* JSLrcParser.m */,
+			);
+			path = lrc;
+			sourceTree = "<group>";
+		};
+		E99E465A15D1792500017105 = {
+			isa = PBXGroup;
+			children = (
+				E99E466F15D1792500017105 /* JLyric */,
+				E99E466815D1792500017105 /* Frameworks */,
+				E99E466615D1792500017105 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E99E466615D1792500017105 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E99E466515D1792500017105 /* JLyric.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E99E466815D1792500017105 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E92FE2DF15D29EE200354E14 /* AudioToolbox.framework */,
+				E92FE2DB15D29E9200354E14 /* CoreAudio.framework */,
+				E99E466915D1792500017105 /* UIKit.framework */,
+				E99E466B15D1792500017105 /* Foundation.framework */,
+				E99E466D15D1792500017105 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E99E466F15D1792500017105 /* JLyric */ = {
+			isa = PBXGroup;
+			children = (
+				E92FE2CA15D29B4800354E14 /* HHCommonLib */,
+				E92FE2AA15D299F900354E14 /* Audio */,
+				E92FE2E315D2AD8800354E14 /* lrc */,
+				E99E467815D1792500017105 /* JSAppDelegate.h */,
+				E99E467915D1792500017105 /* JSAppDelegate.m */,
+				E99E467B15D1792500017105 /* MainStoryboard.storyboard */,
+				E99E467E15D1792500017105 /* JSViewController.h */,
+				E99E467F15D1792500017105 /* JSViewController.m */,
+				E9E4401D15D395C6000D6483 /* 01.lrc */,
+				E99E468815D17B1500017105 /* 01.mp3 */,
+				E99E467015D1792500017105 /* Supporting Files */,
+			);
+			path = JLyric;
+			sourceTree = "<group>";
+		};
+		E99E467015D1792500017105 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E99E467115D1792500017105 /* JLyric-Info.plist */,
+				E99E467215D1792500017105 /* InfoPlist.strings */,
+				E99E467515D1792500017105 /* main.m */,
+				E99E467715D1792500017105 /* JLyric-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E99E466415D1792500017105 /* JLyric */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E99E468315D1792500017105 /* Build configuration list for PBXNativeTarget "JLyric" */;
+			buildPhases = (
+				E99E466115D1792500017105 /* Sources */,
+				E99E466215D1792500017105 /* Frameworks */,
+				E99E466315D1792500017105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JLyric;
+			productName = JLyric;
+			productReference = E99E466515D1792500017105 /* JLyric.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E99E465C15D1792500017105 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JS;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = Jey;
+			};
+			buildConfigurationList = E99E465F15D1792500017105 /* Build configuration list for PBXProject "JLyric" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E99E465A15D1792500017105;
+			productRefGroup = E99E466615D1792500017105 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E99E466415D1792500017105 /* JLyric */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E99E466315D1792500017105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99E467415D1792500017105 /* InfoPlist.strings in Resources */,
+				E99E467D15D1792500017105 /* MainStoryboard.storyboard in Resources */,
+				E99E468915D17B1500017105 /* 01.mp3 in Resources */,
+				E9E4401E15D395C7000D6483 /* 01.lrc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E99E466115D1792500017105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99E467615D1792500017105 /* main.m in Sources */,
+				E99E467A15D1792500017105 /* JSAppDelegate.m in Sources */,
+				E99E468015D1792500017105 /* JSViewController.m in Sources */,
+				E92FE2C015D299F900354E14 /* AQPlayer.mm in Sources */,
+				E92FE2C415D299F900354E14 /* HHAudioManager.m in Sources */,
+				E92FE2C515D299F900354E14 /* CADebugMacros.cpp in Sources */,
+				E92FE2C615D299F900354E14 /* CAStreamBasicDescription.cpp in Sources */,
+				E92FE2C715D299F900354E14 /* CAXException.cpp in Sources */,
+				E92FE2C815D299F900354E14 /* MeterTable.cpp in Sources */,
+				E92FE2CE15D29B4800354E14 /* HHDebug.m in Sources */,
+				E92FE2E815D2ADC500354E14 /* JSLrcParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E99E467215D1792500017105 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E99E467315D1792500017105 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E99E467B15D1792500017105 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E99E467C15D1792500017105 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E99E468115D1792500017105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E99E468215D1792500017105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E99E468415D1792500017105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JLyric/JLyric-Prefix.pch";
+				INFOPLIST_FILE = "JLyric/JLyric-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E99E468515D1792500017105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JLyric/JLyric-Prefix.pch";
+				INFOPLIST_FILE = "JLyric/JLyric-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E99E465F15D1792500017105 /* Build configuration list for PBXProject "JLyric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99E468115D1792500017105 /* Debug */,
+				E99E468215D1792500017105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E99E468315D1792500017105 /* Build configuration list for PBXNativeTarget "JLyric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99E468415D1792500017105 /* Debug */,
+				E99E468515D1792500017105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E99E465C15D1792500017105 /* Project object */;
+}
