@@ -171,7 +171,7 @@ bool AQPlayer::CreateQueueForFile(CFStringRef fileName)
         return false;
     }
     CFStringRef inFilePath = fileName;
-    if (![[NSFileManager defaultManager] fileExistsAtPath:(NSString *)inFilePath isDirectory:NO]) {
+    if (![[NSFileManager defaultManager] fileExistsAtPath:(NSString *)inFilePath isDirectory:0x0]) {
         return false;
     }
     

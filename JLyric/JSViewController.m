@@ -111,7 +111,11 @@
     }
     if ([_lrcKeys count]<1) {
         NSArray __autoreleasing *ks = [[_lrc.lyric allKeys] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
-            return [obj1 floatValue]>[obj2 floatValue];
+            if ([obj1 floatValue]>[obj2 floatValue]) {
+                return NSOrderedDescending;
+            } else {
+                return NSOrderedAscending;
+            }
         }];
         if (ks) [_lrcKeys addObjectsFromArray:ks];
     }

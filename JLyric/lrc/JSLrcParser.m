@@ -15,7 +15,7 @@
     if (file == nil) {
         return nil;
     }
-    if (![[NSFileManager defaultManager] fileExistsAtPath:file isDirectory:NO]) {
+    if (![[NSFileManager defaultManager] fileExistsAtPath:file isDirectory:0x0]) {
         return nil;
     }
     NSData *data = [NSData dataWithContentsOfFile:file];
